@@ -1,0 +1,12 @@
+"""
+    We hide urls and elements here
+"""
+amazon_url = "https://www.amazon.com/"
+amazon_search_box = "twotabsearchtextbox"
+amazon_search_item = "Cardillac"
+amazon_search_button = ".nav-search-submit > input:nth-child(2)"
+amazon_item = "div:nth-of-type(8)  .celwidget.slot\=MAIN.template\=SEARCH_RESULTS.widgetId\=search-results .a-link-normal.a-text-normal > .a-color-base.a-size-base-plus.a-text-normal"
+amazon_buy_button = "buybox-see-all-buying-choices-announce"
+amazon_add_button = "#a-autoid-0 > span:nth-child(1) > input:nth-child(2)"
+amazon_checkout_button = "#hlb-ptc-btn > span"
+amazon_phrase = "Amazon Sign-In"
