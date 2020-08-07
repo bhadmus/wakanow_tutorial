@@ -16,10 +16,12 @@ class GuestShopper:
         self.site.launch_browser(url)
 
     def search_and_click(self, box, item, button):
-        self.site.driver.find_element_by_id(box).send_keys(item)
+        self.site.driver.find_element_by_css_selector(box).send_keys(item)
         self.site.driver.find_element_by_css_selector(button).click()
 
     def select_item(self, item):
+        wait = WebDriverWait(self.site.driver, 15)
+        wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, item)))
         self.site.driver.find_element_by_css_selector(item).click()
 
     def scroll_page(self):

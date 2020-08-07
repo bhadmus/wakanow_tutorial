@@ -17,3 +17,18 @@ Feature: Guest Shopping
     When I proceed to checkout on "amazon"
 
     Then I should be redirected to "amazon" Sign-in Page
+
+
+    Scenario: Guest Shopping on Konga
+
+    Given I am on "konga" website
+
+    And I search and click an item on "konga"
+
+    And I selected the "konga" item
+
+    And I added the "konga" item to cart
+
+    When I proceed to checkout on "konga"
+
+    Then I should be redirected to "konga" Sign-in Page
